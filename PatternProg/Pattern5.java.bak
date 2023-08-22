@@ -1,0 +1,117 @@
+/**
+* These all programs are for practice purpose only 
+* In all these programs, mostly slight mistakes in the code changes the entire pattern.
+* In the last program I have intentionally written the char's in both the inc. order and
+  then the dec. order.
+*/
+class Pattern5
+{
+	public static void main(String args[]){
+		for (int row = 0; row < 19; row++)
+		{
+			if (row < 10)
+			{
+				for (int space = 0; space < 9-row; space++)
+				{
+					System.out.print(" ");
+				}
+				for (int star = 0; star < row+1; star++)
+				{
+					System.out.print("* ");
+				}
+				System.out.println();
+			}else {
+				for (int space = 0; space < row-9; space++)
+				{
+					System.out.print(" ");
+				}
+				for (int star = 0; star < 19-row; star++)
+				{
+					System.out.print("* ");
+				}
+				System.out.println();
+			}
+		}
+		System.out.println("------------------------------------------");
+		System.out.println("Another Program to display only the even no. of stars in the above pattern:");
+		for (int row = 0; row < 9; row++)
+		{
+			if (row < 5)
+			{
+				for (int space = 0; space < 4-row; space++)
+				{
+					System.out.print(" ");
+				}
+				for (int star = 0; star < 2*(row+1); star++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}else {
+				for (int space = 0; space < row-4; space++ )
+				{
+					System.out.print(" ");
+				}
+				for (int star = 0; star < 18-2*row; star++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+		System.out.println("------------------------------------------");
+		System.out.println("Another Program in which we will display the odd no. of elements only:");
+		for (int i=0; i< 9;i++ )
+		{
+			if (i < 5)
+			{
+				for (int j = 0; j < 4-i; j++)
+				{
+					System.out.print(" ");
+				}
+				for (int k = 0; k < 2*i+1; k++ )
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}else{
+				for (int j = 0; j < i-4; j++)
+				{
+					System.out.print(" ");
+				}
+				for (int k = 0; k < 17-2*i; k++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+		System.out.println("------------------------------------------");
+		System.out.println("In this program we will add char's in place of the *:");
+		for (int row = 0; row < 19; row++)
+		{
+			if (row < 10)
+			{
+				for (int sp = 0; sp < 9-row; sp++)
+				{
+					System.out.print(" ");
+				}
+				for (int str = 0; str < row+1; str++)
+				{
+					System.out.print((char)(65+str)+" ");
+				}
+				System.out.println();
+			}else{
+				for (int sp = 0; sp < row-9; sp++)
+				{
+					System.out.print(" ");
+				}
+				for (int str = 0; str < 19-row; str++)
+				{
+					System.out.print((char)(74-str)+" ");
+				}
+				System.out.println();
+			}
+		}
+	}
+}
