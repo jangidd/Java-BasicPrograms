@@ -1,0 +1,68 @@
+/**
+* First class is for displaying the rating stars according the no. of enquiries.
+* 
+*/
+import java.util.*;
+class Test1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.print("No. of Enquiries :");
+		int num = sc.nextInt();
+		/*if (num < 30)
+		{
+			System.out.println("No Ratings specified");
+		}else if (num <50)
+		{
+			System.out.println("**");
+		}else if (num < 70)
+		{
+			System.out.println("***");
+		}else if (num < 100)
+		{
+			System.out.println("****");
+		}else
+		{
+			System.out.println("*****");
+		}*/
+		if (num < 30)
+		{
+			System.out.println("No Ratings Available");
+		}else if (num >= 30 && num < 50)
+		{
+			System.out.println("**");
+		}else if (num < 70)
+		{
+			System.out.println("***");
+		}else if (num < 100)
+		{
+			System.out.println("****");
+		}else if (num >= 100)
+		{
+			System.out.println("*****");
+		}
+		/* else {
+			System.out.println("No ratings available");
+		}
+		if we give i/p value like 19 than it will give o/p as "**" coz that else if condition will be satisfied.
+		*/
+	}
+}
+class W
+{
+	public static void main(String... args){
+		Scanner s = new Scanner(System.in);
+		System.out.print(" Enter the no. :");
+		int num = s.nextInt();
+		int value = 0;
+		String result = "";
+		while (num != 0)
+		{
+			value = num%10;
+			result = value +" " + result;
+			num = num/10;
+		}
+		System.out.println(result);
+	}
+}
